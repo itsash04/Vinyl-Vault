@@ -1,0 +1,162 @@
+/* Root Variables */
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #01579b; /* Deep Blue */
+  background-color: #e0f2f1; /* Mint Green Background */
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Anchor Links */
+a {
+  font-weight: 500;
+  color: #0288d1; /* Bright Blue */
+  text-decoration: inherit;
+}
+a:hover {
+  color: #00796b; /* Mint Green */
+}
+
+/* Page Layout */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #d1f2eb, #a8e6cf);
+}
+
+/* Page Title */
+.page-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #01579b; /* Deep Blue */
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.byline {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #00796b; /* Mint Green Accent */
+  text-align: center;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #0288d1; /* Bright Blue */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #00796b; /* Mint Green */
+  transform: scale(1.05);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Input Field Styling */
+input {
+  border: 2px solid #01579b; /* Deep Blue */
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 1em;
+  background-color: white;
+  color: #01579b;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #00796b;
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #01579b;
+}
+
+.card-text {
+  color: #00796b;
+}
+
+/* Album Link Button */
+.album-button {
+  background-color: #0288d1 !important; /* Bright Blue */
+  color: white !important;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.album-button:hover {
+  background-color: #00796b !important; /* Mint Green */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+/* Light Theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #e0f2f1; /* Light Mint Green */
+  }
+
+  a:hover {
+    color: #00796b;
+  }
+
+  button {
+    background-color: #80deea; /* Soft Mint Green */
+    color: #004d40;
+  }
+}

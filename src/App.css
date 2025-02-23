@@ -1,0 +1,108 @@
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #d1f2eb, #a8e6cf); /* Soft Mint Gradient */
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+}
+
+/* App Title */
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #01579b; /* Deep Blue */
+  text-shadow: 2px 2px 5px rgba(1, 87, 155, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Input Styling */
+input {
+  border: 2px solid #0277bd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #e0f7fa;
+  color: #004d40;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #004d40;
+  background-color: #b2ebf2;
+}
+
+/* Search Button */
+button {
+  background-color: #0288d1;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00796b;
+  transform: scale(1.05);
+}
+
+/* Album Card Styling */
+.card {
+  padding: 1.5em;
+  background-color: #80deea; /* Soft Mint Green */
+  border: 2px solid #0277bd; /* Deep Blue Border */
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(2, 119, 189, 0.2);
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 12px rgba(2, 119, 189, 0.4);
+}
+
+/* Album Title */
+.card-title {
+  color: #004d40;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Album Text */
+.card-text {
+  color: #00796b;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* Album Link Button */
+.card button {
+  background-color: #01579b; /* Deep Blue */
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #00796b; /* Mint Green Hover */
+  transform: scale(1.05);
+}
+
+/* Link Button Styling */
+.card button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card button a:hover {
+  text-decoration: underline;
+}
